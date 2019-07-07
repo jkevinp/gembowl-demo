@@ -1,7 +1,7 @@
 <?php
 
 include 'config.php';
-//POST
+//POST method
 
 //new version 4
 $json='{"amount":"12.00","merchant_code":"abcd1234","order_id":"ord1543976117","reference":"reference\/attach","status":"PAID","transaction_id":"IC520PMOAFS","sign":"af07d0bcfa4aeadc025e566cd2a3e854"}';

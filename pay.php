@@ -3,8 +3,6 @@ header('Content-Type: application/json');
 include_once('config.php');
 $key=$_GET['key'];
 $merchant_code=$_GET['merchant_code'];
-// $sign = strtoupper(md5($merchant_code.strtolower($_GET['orderid']).$_GET['amount'].$_GET['timestamp'].$_GET['notifyurl'].$key));
-
 
 $data = [
 	'merchant_code'	=> $merchant_code,
@@ -15,15 +13,13 @@ $data = [
 	'notifyurl'	=> $_GET['notifyurl'],
 	'httpurl'	=> $_GET['httpurl'],
 	'channel'	=> $_GET['channel'],
-	// 'sign'	=> $sign
 ];
 
 
-	ksort($data);
-	$raw = urldecode(http_build_query($data)).'&'.$key; 
-    $data['sign']= md5($raw);
+ksort($data);
+$raw = urldecode(http_build_query($data)).'&'.$key; 
+$data['sign']= md5($raw);
 
-// echo json_encode($data);
 
 $curl = curl_init();
 

@@ -3,7 +3,7 @@
 //provided by gateway
 $merchant_code = "abcd1234";
 $key = "71afe35bd5daa0d7d2f9d55721d6d475";
-$gateway_url = 'http://pmapi.local/v4/';
+$gateway_url = 'https://pmapi.gembowl.com/v4/';
 $ajax_check_url = "https://cashier.gembowl.com/check";
 
 
@@ -16,7 +16,7 @@ $notification_url = 'http://ptsv2.com/t/bsare-1533929861/post';
 $http_back_url = 'http://merchantsite.com';
 
 
-
+//Merchant withdrawal parameters
 $merchant_withrawal = [
 	'merchant_code' => 'abcd1234',
 	'amount' => rand(1,100),
@@ -26,6 +26,5 @@ $merchant_withrawal = [
 ];
 
  ksort($merchant_withrawal);
- $mwtos = urldecode(http_build_query($merchant_withrawal)).'&71afe35bd5daa0d7d2f9d55721d6d475'; 
-
+ $mwtos = urldecode(http_build_query($merchant_withrawal)).'&'.$key; 
  $merchant_withrawal['sign'] = md5($mwtos);
