@@ -1,0 +1,88 @@
+/**{margin: 0;padding: 0;}*/
+/*h2{width: 100%;text-align: center;padding-top:20px;padding-bottom: 20px;}*/
+/*form{margin-top: 30px;min-width: 300px; max-width:500px;width:auto;margin-left: auto;margin-right: auto;}*/
+/*form input,form select{width: 230px;padding-top: 5px;padding-bottom: 5px;display: inline-block;float: right;}*/
+/*form label{width: 250px;display: inline-block;float: left;}*/
+/*.grp{padding-top: 10px;position: relative;display: block;clear: both;}*/
+/*button,a{background: #4267b2;border: 0;width: 200px;color: white;padding-top: 10px;padding-bottom: 10px;margin-left: auto;margin-right: auto;}*/
+/*a{display: inline-block;text-align: center;}*/
+.bd-callout {
+    padding: 1.25rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    border: 1px solid #eee;
+    border-left-width: .25rem;
+    border-radius: .25rem
+}
+
+.bd-callout h4 {
+    margin-top: 0;
+    margin-bottom: .25rem
+}
+
+.bd-callout p:last-child {
+    margin-bottom: 0
+}
+
+.bd-callout code {
+    border-radius: .25rem
+}
+
+.bd-callout+.bd-callout {
+    margin-top: -.25rem
+}
+
+.bd-callout-info {
+    border-left-color: #5bc0de
+}
+
+.bd-callout-info h4 {
+    color: #5bc0de
+}
+
+.bd-callout-warning {
+    border-left-color: #f0ad4e
+}
+
+.bd-callout-warning h4 {
+    color: #f0ad4e
+}
+
+.bd-callout-danger {
+    border-left-color: #d9534f
+}
+
+.bd-callout-danger h4 {
+    color: #d9534f
+}
+#scroller {
+    position:fixed;
+    right:20px !important;
+    bottom:20px !important;
+    cursor:pointer;
+    width:50px;
+    height:50px;
+    background-color:#3498db;
+    text-indent:-9999px;
+        z-index: 9999;
+    display:none;
+    -webkit-border-radius:60px;
+    -moz-border-radius:60px;
+    border-radius:60px
+}
+#scroller span {
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-8px;
+    margin-top:-12px;
+    height:0;
+    width:0;
+    border:8px solid transparent;
+    border-bottom-color:#ffffff;
+}
+#scroller:hover {
+    background-color:#e74c3c;
+    opacity:1;filter:"alpha(opacity=100)";
+    -ms-filter:"alpha(opacity=100)";
+}
